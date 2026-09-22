@@ -1,5 +1,5 @@
 console.assert(JSON.stringify(movies) === moviesJSON, {
-    message: "WARNING - movies dataset has has been modified!!",
+    message: "WARNING - movies dataset has been modified!!",
   })
   
   console.assert(JSON.stringify(movieDetails) === movieDetailsJSON, {
