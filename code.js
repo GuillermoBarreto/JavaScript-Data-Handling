@@ -69,6 +69,7 @@ document.body.addEventListener('input', () => {
     const actorsInput = document.getElementById('actorsNameId')
     const titleInput = document.getElementById('movieTitleId')
     const moviesContainer = document.querySelector('.movies-container')
+    if (!moviesContainer) return
     let moviesByInputResult = []
 
     combinedDatas.forEach(movie => {
