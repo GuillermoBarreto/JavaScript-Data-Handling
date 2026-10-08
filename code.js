@@ -75,8 +75,10 @@ document.body.addEventListener('input', () => {
 
     combinedDatas.forEach(movie => {
 
-        let actorsOfMovie = movie.cast.join('')
-        let titleOfMovie = movie.title
+        // combinedDatas can hold entries with no matching movie, where
+        // cast/title are undefined; guard so live search never throws.
+        let actorsOfMovie = (movie.cast || []).join('')
+        let titleOfMovie = movie.title || ''
 
         if (actorsInput.value && !titleInput.value) {
 
