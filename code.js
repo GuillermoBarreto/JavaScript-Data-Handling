@@ -52,6 +52,7 @@ function creatingMovies(Movie) {
     let image = document.createElement('img')
     
     image.src = Movie.imageUrl
+    image.alt = `Movie poster: ${Movie.title || 'unknown title'}`
    
     title.innerText = `Title: ${Movie.title}`
     castingMembers.innerText = Movie.cast
